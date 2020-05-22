@@ -1,5 +1,4 @@
 //OBJECT CLASS
-
 import java.awt.*;
 import java.util.*;
 public class RandomWalker {
@@ -45,10 +44,9 @@ public class RandomWalker {
 }
 
 
-
 //EXECUTABLE FILE
-
 public class TestRandomWalker {
+	
     public static final int STEPS = 500;
     
     public static void main(String[] args) {
