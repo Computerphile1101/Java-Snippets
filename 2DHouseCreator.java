@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.util.*;
 
-public class Final_Project {
+public class HouseCreator {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
