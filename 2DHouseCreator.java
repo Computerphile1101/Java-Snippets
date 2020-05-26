@@ -5,8 +5,8 @@ public class HouseCreator {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-		DrawingPanel panel = new DrawingPanel(600, 400);
-		Graphics g = panel.getGraphics();
+	DrawingPanel panel = new DrawingPanel(600, 400);
+	Graphics g = panel.getGraphics();
         Scanner console = new Scanner(System.in);
         
 
@@ -126,13 +126,11 @@ public static void house (Graphics g, Scanner console) {
 	String houseChoice =console.nextLine();
 	g.setColor(Color.BLACK);
 	
-
 	if(houseChoice.equalsIgnoreCase("Red")){
 		
 		g.fillRect(146, 146, 308, 158);
 		g.setColor(new Color(255, 26, 26));
 		System.out.println("You picked red. That reminds me of a book I red the other day. Ha...ha...ha.");
-		
 	}
 	else if(houseChoice.equalsIgnoreCase("Light Grey")) {
 		
@@ -250,7 +248,6 @@ public static void chimney(Graphics g,Scanner console) {
 
 	else if(chimneyChoice.equalsIgnoreCase("chimney2")) {
 	
-	
 	g.setColor(new Color(66,36,17));	
 	
 	for(int i = 2; i<=6;i++) {
@@ -296,9 +293,9 @@ public static void roof (Graphics g, Scanner console) {
 	String roofChoice =console.nextLine();
 	g.setColor(Color.BLACK);
 	Polygon poly1 = new Polygon();
-    poly1.addPoint(97, 154);	//left
-    poly1.addPoint(300, 15);    //top
-    poly1.addPoint(503, 154);  	//right     
+        poly1.addPoint(97, 154);//left
+        poly1.addPoint(300, 15);//top
+        poly1.addPoint(503, 154);//right     
     
 	
 	if(roofChoice.equalsIgnoreCase("Red")){
@@ -391,11 +388,11 @@ public static void roof (Graphics g, Scanner console) {
 		roof(g,console);		
 	}
 	Polygon poly = new Polygon();
-    poly.addPoint(110, 150);
-    poly.addPoint(300, 20);
-    poly.addPoint(490, 150);        
-    g.fillPolygon(poly);
-    System.out.println();
+        poly.addPoint(110, 150);
+    	poly.addPoint(300, 20);
+    	poly.addPoint(490, 150);        
+   	g.fillPolygon(poly);
+    	System.out.println();
 } 
 
 
@@ -408,7 +405,7 @@ public static void window(Graphics g,Scanner console) {
 	//square window
 
         //first window
-        g.setColor(Color.BLACK);
+            g.setColor(Color.BLACK);
             g.fillRect(181, 161, 58, 58);
             g.setColor(Color.YELLOW);
             g.fillRect(185,165,50,50);
@@ -439,7 +436,7 @@ public static void window(Graphics g,Scanner console) {
             g.setColor(Color.BLACK);
             g.fillRect(208,234, 4, 50);
             g.fillRect(185,257, 50, 4);    
-        	System.out.println("You picked square windows. Do you know why squares make great photographers? Because they know all the right angles. Ha...ha...ha.");
+            System.out.println("You picked square windows. Do you know why squares make great photographers? Because they know all the right angles. Ha...ha...ha.");
         	
 	}
 	
@@ -448,14 +445,14 @@ public static void window(Graphics g,Scanner console) {
 		//square window
 
 	        //first window
-	        g.setColor(Color.BLACK);
+	            g.setColor(Color.BLACK);
 	            g.fillRect(181, 161, 58, 58);
 	            g.setColor(Color.YELLOW);
 	            g.fillRect(185,165,50,50);
 	            
 	            g.setColor(new Color(20, 32, 41));
 	            g.fillRect(185, 165, 10, 50);
-                g.fillRect(225, 165, 10,50);
+                    g.fillRect(225, 165, 10,50);
 	            
 	            g.setColor(Color.BLACK);
 	            g.fillRect(208,165, 4, 50);
@@ -469,8 +466,8 @@ public static void window(Graphics g,Scanner console) {
 	            g.fillRect(365,165,50,50);
 	            
 	            g.setColor(new Color(20, 32, 41));
-                g.fillRect(365, 165, 10, 50);
-                g.fillRect(405, 165, 10, 50);
+                    g.fillRect(365, 165, 10, 50);
+                    g.fillRect(405, 165, 10, 50);
 	            
 	            g.setColor(Color.BLACK);
 	            g.fillRect(389, 165, 4, 50);
@@ -485,7 +482,7 @@ public static void window(Graphics g,Scanner console) {
 	            
 	            g.setColor(new Color(20, 32, 41));
 	            g.fillRect(365, 234, 10, 50);
-                g.fillRect(405, 234, 10, 50);
+                    g.fillRect(405, 234, 10, 50);
 	            
 	            g.setColor(Color.BLACK);
 	            g.fillRect( 389, 234, 4,50);
@@ -500,8 +497,8 @@ public static void window(Graphics g,Scanner console) {
 	            g.fillRect(185,234,50,50);
 	            
 	            g.setColor(new Color(20, 32, 41));
-                g.fillRect(185, 234, 10, 50);
-                g.fillRect(225, 234, 10, 50);
+                    g.fillRect(185, 234, 10, 50);
+                    g.fillRect(225, 234, 10, 50);
 	            
 	            g.setColor(Color.BLACK);
 	            g.fillRect(208,234, 4, 50);
@@ -516,7 +513,7 @@ public static void window(Graphics g,Scanner console) {
 
 	      //circle 
         //first window
-    g.setColor(Color.BLACK);
+        g.setColor(Color.BLACK);
         g.fillOval(181, 161, 58, 58);
         g.setColor(Color.YELLOW);
         g.fillOval(185,165,50,50);
@@ -567,7 +564,7 @@ public static void door(Graphics g,Scanner console) {
 	if(doorChoice.equalsIgnoreCase("classic")) {
 	//door option one. classic
 
-		g.setColor(Color.BLACK);
+	g.setColor(Color.BLACK);
 
         g.fillRect(270, 200, 60, 100);
 
